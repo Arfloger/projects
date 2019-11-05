@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="js/vendor/slick/slick.min.css">
+  <link rel="stylesheet" href="js/vendor/slick/slick-theme.css">
+  <link rel="stylesheet" href="js/vendor/fancybox/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="main-header-wp">
+    <header class="main-header">
+      <div class="main-header__wrap wrap">
+        <div class="logo main-header__logo">
+          <a href="#nav-main" class="logo__link">
+            <picture>
+              <source type="image/webp" srcset="img/logo.webp">
+              <img src="img/logo.png" alt="Логотип Мария ФМ">
+            </picture>
+          </a>
+        </div>
+        <div class="burger">
+          <button class="burger-btn" area-label="Открытие меню"></button>
+        </div>
+        <nav>
+          <ul class="nav-list nav-list--header">
+            <li class="nav-list__item">
+              <a href="#nav-adv" class="nav-list__link">Что входит в программу</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#nav-steps" class="nav-list__link">Этапы работы</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#nav-test" class="nav-list__link">Тест-драйв</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#nav-discount" class="nav-list__link">Получить скидку</a>
+            </li>
+          </ul>
+        </nav>
+        <a href="#nav-note" class="button main-header__button">Заказать обратный звонок</a>
+      </div>
+    </header>
+  </div>
+  <main>
+    <section id="nav-main" class="lead">
+      <h1 class="visually-hidden">Мультимедиа автодрайв</h1>
+      <div class="wrap">
+        <div class="bubles">
+          <div class="ball ball-o pos-6"><span class="visually-hidden">Декоративный шарик</span></div>
+          <div class="ball ball-f pos-7"><span class="visually-hidden">Декоративный шарик</span></div>
+          <div class="ball ball-y pos-8"><span class="visually-hidden">Декоративный шарик</span></div>
+          <div class="ball ball-v pos-9"><span class="visually-hidden">Декоративный шарик</span></div>
+          <div class="ball ball-i pos-10"><span class="visually-hidden">Декоративный шарик</span></div>
+        </div>
+        <div class="dust"></div>
+        <div class="subwrap lead__subwrap">
+          <a data-fancybox="" data-src="#modal-1" href="#" class="video-btn lead__video-btn"><span>Cмотрите видео</span></a>
+          <article class="adv-panel">
+            <h3 class="adv-panel__title">Бесплатно разработаем рекламную кампанию</h3>
+            <p>Закажите звонок и мы разработаем идею рекламной кaмпании в течение дня!</p>
+            <form>
+              <input type="tel" class="project-input adv-panel__input" placeholder="Введите номер телефона">
+              <button class="button adv-panel__button" type="submit">Заказать обратный звонок</button>
+            </form>
+            <b>Акция! Получите больше рекламы!</b>
+            <p>Примите решение за 12 часов и мы оформим под вас все соцсети программы «Автодрайв Мультимедиа»!</p>
+            <div class="adv-panel__timer timer">
+              <div class="timer__content">
+                <script src="js/vendor/timer/timer.js"></script>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="info">
+      <div class="wrap">
+        <div class="bubles">
+          <div class="ball ball-o pos-1"><span class="visually-hidden">Декоративный шарик</span></div>
+          <div class="ball ball-f pos-2"><span class="visually-hidden">Декоративный шарик</span></div>
+          <div class="ball ball-y pos-3"><span class="visually-hidden">Декоративный шарик</span></div>
+          <div class="ball ball-v pos-4"><span class="visually-hidden">Декоративный шарик</span></div>
+          <div class="ball ball-i pos-5"><span class="visually-hidden">Декоративный шарик</span></div>
+        </div>
+        <div id="nav-adv" class="subwrap">
+          <h2 class="title">Что входит в программу «автодрайв мультимедиа»</h2>
+          <div class="gap-3"></div>
+          <p class="text-center">Благодаря нашей рекламе не нужно тратить время и силы на продвижение: учится настраивать рекламу, создавать каналы в соц. сетях, группы Вконтакте, лендинги. Чтобы попасть в центр внимания потенциальных покупателей просто обратитесь за рекламой на радио. За небольшую сумму вы получите полноценную работающую рекламную систему, состоящую из рекламы на радио и популярных в России соцсетей.</p>
+          <div class="gap-2"></div>
+          <div class="features">
+            <div class="features__item features-item">
+              <div class="features-item__img-wrapper">
+
+                <div class="antenna">
+                  <div class="signal-1-container">
+                    <div class="signal-1"></div>
+                  </div>
+                  <div class="signal-2-container">
+                    <div class="signal-2"></div>
+                  </div>
+                  <div class="signal-3-container">
+                    <div class="signal-3"></div>
+                  </div>
+                </div>
+
+                <svg class="svg-radio" area-label="Иконка">
+                  <use xlink:href="img/sprite.svg#feachure-1"></use>
+                </svg>
+
+              </div>
+              <p class="features-item__title">Радиоролик утром и вечером</p>
+              <p class="features-item__text">Радиоролик программы «Автодрайв» будет играть два раза в день на радио в определенное время. Каждый ролик услышат тысячи горожан. Радио всегда играет на фоне, это дает преимущественный охват среди медиа источников.</p>
+            </div>
+            <div class="features__item features-item">
+              <div class="features-item__img-wrapper">
+                <div class="">
+                  <svg class="svg-vk" area-label="Иконка">
+                    <use xlink:href="img/sprite.svg#svg-vk"></use>
+                  </svg>
+                  <svg class="svg-tech" area-label="Иконка">
+                    <use xlink:href="img/sprite.svg#feachure-2"></use>
+                  </svg>
+                  <svg class="svg-inst" area-label="Иконка">
+                    <use xlink:href="img/sprite.svg#svg-inst"></use>
+                  </svg>
+                </div>
+              </div>
+              <p class="features-item__title">Ежедневные посты в социальных сетях</p>
+              <p class="features-item__text">XXI век - время социальных сетей. Поэтому мы выкладываем информационные новостные посты с вашей рекламой в группы «Автодрайв» в популярных соцсетях: ВКонтакте, Фейсбук, Инстаграм.</p>
+            </div>
+            <div class="features__item features-item">
+              <div class="features-item__img-wrapper">
+                <svg class="svg-movie" area-label="Иконка">
+                  <use xlink:href="img/sprite.svg#svg-movie"></use>
+                </svg>
+                <svg class="svg-movie-main" area-label="Иконка">
+                  <use xlink:href="img/sprite.svg#feachure-3"></use>
+                </svg>
+              </div>
+              <p class="features-item__title">Видео на Youtube-канале Мария ФМ</p>
+              <p class="features-item__text">Мария ФМ активно развивает канал на платформе Youtube. Мы записываем увлекательные подкасты и программы, приглашаем интересных гостей. Внедряя вашу рекламу в видеоконтент — мы увеличиваем охват аудитории соцсетей!</p>
+            </div>
+            <div class="features__item features-item">
+              <div class="features-item__img-wrapper">
+                <svg class="svg-book" area-label="Иконка">
+                  <use xlink:href="img/sprite.svg#feachure-4"></use>
+                </svg>
+                <svg class="svg-loop" area-label="Иконка">
+                  <use xlink:href="img/sprite.svg#svg-loop"></use>
+                </svg>
+                <svg class="svg-pen" area-label="Иконка">
+                  <use xlink:href="img/sprite.svg#svg-pen"></use>
+                </svg>
+              </div>
+              <p class="features-item__title">Нативная реклама в сценарии</p>
+              <p class="features-item__text">Такой метод продвижения называется «Естественная реклама» В ходе программы мы привлекаем внимание к вам в контексте интересов пользователя. Естесственно, гладко, ненавязчиво да ещё и интересно!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="steps">
+      <div class="subwrap">
+        <h2 class="title">Преимущества спонсорской рекламы</h2>
+        <div class="gap"></div>
+        <div class="steps__list">
+          <div class="steps__item steps-item">
+            <p class="steps-item__head"><span class="steps-item__num">1</span>Программа лично под вас</p>
+            <p class="steps-item__text">Мы готовим каждую программу, учитывая: предпочтения автолюбителей, чувство юмора, привычки, удобное время для прослушивания. Придумываем сюжет и пишем сценарий.</p>
+          </div>
+          <div class="steps__item steps-item">
+            <p class="steps-item__head"><span class="steps-item__num">2</span>Прайм-тайм</p>
+            <p class="steps-item__text">Программа выходит в самое активное время для водителей: в 11:30 и в 17:30. Это время идеально для вашей целевой аудитории. В это время на дорогах — «час пик», а водители слушают радио в пробках.</p>
+          </div>
+          <div class="steps__item steps-item">
+            <p class="steps-item__head"><span class="steps-item__num">3</span>Нет конкурентов</p>
+            <p class="steps-item__text">Ваша реклама находится вне рекламного блока. Вокруг ни одного чужого ролика. Только вы. Это гарантия того, что вас услышит и хорошо запомнит аудитория.</p>
+          </div>
+          <div class="steps__item steps-item">
+            <p class="steps-item__head"><span class="steps-item__num">4</span>Повышенное внимание слушателей</p>
+            <p class="steps-item__text">Ваша реклама находится внутри новостной программы. Автолюбители внимательно слушают программу — это интересный для них контент. Поэтому работает она гораздо лучше, чем обычная реклама в общем блоке.</p>
+          </div>
+          <div class="steps__item steps-item">
+            <p class="steps-item__head"><span class="steps-item__num">5</span>Одинаковая тема</p>
+            <p class="steps-item__text">Товар схожий с тематикой программы и информация о вас легко вписывается в её содержание. Реклама легко воспринимается, а слушатели не переключаются с рекламы внутри тематической передачи.</p>
+          </div>
+          <div class="steps__item steps-item">
+            <p class="steps-item__head"><span class="steps-item__num">6</span>Соцсети</p>
+            <p class="steps-item__text">Берем на себя ведение каналов в наиболее популярных соцсетях в России. Теперь ваша аудитория не только не пропустит рекламу, но и увидит, услышит и прочтет о нас в соцсетях!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="nav-note" class="script">
+      <div class="subwrap">
+        <div class="script-block script-block--woman">
+          <div class="script-block__top">
+            <h3 class="script-block__title">Разработаем рекламную кампанию бесплатно</h3>
+            <div class="script-block__text-cont">
+              <p>Мы бесплатно продумаем идею вашей рекламной кампании. У вас будет готовый план продвижения услуг на рынке. </p>
+              <div class="gap-3"></div>
+            </div>
+            <div class="flex-wrap">
+              <a href="#" class="video-btn script-block__video-btn"><span class="visually-hidden">Открыть видео</span></a>
+              <div class="script-block__text-cont">
+                <b>Как сделать продающий рекламный ролик</b>
+                <span>Видеоинструкция как сделать продающий ролик на радио Мария ФМ</span>
+                <span>+ Секреты и лайфхаки по продвижению вашей рекламы на радио</span>
+              </div>
+            </div>
+          </div>
+          <div class="script-block__bottom">
+            <div class="script-block__text-cont script-block__text-cont--black">
+              <b>Чтобы разработать рекламную компанию вызовите личного маркетолога</b>
+              <p>На этапе бесплатной консультации Маркетолог совместно с клиентом:</p>
+              <ol>
+                <li>Определит его бизнес-задачу</li>
+                <li>Выстроит стратегию рекламной кампании</li>
+                <li>Составит БРИФ на производство рекламного ролика</li>
+              </ol>
+            </div>
+            <form class="form">
+              <div class="flex-wrap script-block--flex-wrap">
+                <input type="tel" class="project-input script-block__input" placeholder="Введите номер телефона">
+                <button class="button script-block__button" type="button">Заказать обратный звонок</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="nav-steps" class="steps">
+      <div class="subwrap">
+        <h2 class="title">Этапы работы</h2>
+        <div class="gap"></div>
+        <div class="steps__list">
+          <div class="steps__item steps-item">
+            <p class="steps-item__head"><span class="steps-item__num">1</span>Придумываем новый выпуск программы</p>
+            <p class="steps-item__text">Берём интересные актуальные новости по теме Автомобилей. На их основе готовим выпуск программы «Автодрайв». Пишем текст для выпуска новой программы.</p>
+          </div>
+          <div class="steps__item steps-item">
+            <p class="steps-item__head"><span class="steps-item__num">2</span>Создаём уникальную рекламу</p>
+            <p class="steps-item__text">Придумываем сюжет вашей рекламы, пишем сценарий. Подбираем для рекламы уникальный голос. Органично вписываем рекламу в выпуск программы.</p>
+          </div>
+          <div class="steps__item steps-item">
+            <p class="steps-item__head"><span class="steps-item__num">3</span>Записываем программу</p>
+            <p class="steps-item__text">Записываем ежедневную аудио-программу для радио, еженедельную видео-программу на Youtube, создаём посты для социальных сетей с вашей рекламой.</p>
+          </div>
+          <div class="steps__item steps-item">
+            <p class="steps-item__head"><span class="steps-item__num">4</span>Загружаем посты и видео</p>
+            <p class="steps-item__text">Выкладываем ежедневные посты в наши группы Автодрайв в социальных сетях: ВКонтакте, Фейсбук, Инстаграм. Раз в неделю загружаем видео на Youtube. Транслируем программу на радио два раза в день.</p>
+          </div>
+          <div class="steps__item steps-item">
+            <p class="steps-item__head"><span class="steps-item__num">5</span>Собираем целевую аудиторию</p>
+            <p class="steps-item__text">Собираем в соцсетях всех ваших потенциальных покупателей. Подписчиков конкурентов и смежников, всех, кто читает, лайкает и подписывается на вашу тематику.</p>
+          </div>
+          <div class="steps__item steps-item">
+            <p class="steps-item__head"><span class="steps-item__num">6</span>Запускаем рекламу и готовим отчёт</p>
+            <p class="steps-item__text">Создаём целевую таргетированную рекламу каждого выпуска на выбранную целевую аудиторию. Предоставляем клиенту полный отчёт по соцсетям с точными цифрами: Показы, просмотры, прочтения.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="nav-test" class="free">
+      <div class="wrap free__wrap">
+        <div class="bubles-left">
+          <div class="ball ball-y pos-19"><span class="visually-hidden">Декоративный шарик</span></div>
+          <div class="ball ball-v pos-20"><span class="visually-hidden">Декоративный шарик</span></div>
+          <div class="ball ball-i pos-21"><span class="visually-hidden">Декоративный шарик</span></div>
+        </div>
+        <div class="bubles-right">
+          <div class="ball ball-o pos-22"><span class="visually-hidden">Декоративный шарик</span></div>
+          <div class="ball ball-f pos-23"><span class="visually-hidden">Декоративный шарик</span></div>
+        </div>
+        <div class="subwrap">
+          <div class="free__content">
+            <h2 class="title text-left">Закажите один выпуск «Автодрайв мультимедиа» бесплатно</h2>
+            <b class="free__lead free--car">Создадим реальный выпуск программы
+              <br> «Автодрайв мультимедиа» лично под вас. Попробуй и реши!</b>
+            <div class="achieve-item free__achieve-item">
+              <div class="achieve-item__img-wrapper">
+                <img src="img/achieve-1.svg" alt="Иконка">
+              </div>
+              <p class="achieve-item__text">В готовый продукт войдут: аудио-файл, заготовленный пост для соцсетей, и видео снятое для Youtube. Радио Мария ФМ — профессионалы в создании рекламы. Убедитесь на своём опыте!</p>
+            </div>
+            <form class="form">
+              <div class="flex-wrap free--flex-wrap">
+                <input type="tel" class="project-input free__input" placeholder="Телефон">
+                <button class="button free__button" type="button">Заказать обратный звонок</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="partners">
+      <div class="subwrap">
+        <h2 class="title">Наши партнёры, которые уже оценили «Автодрайв»</h2>
+        <div class="gap-2"></div>
+        <div class="partners__list">
+          <li class="partners__item">
+            <a class="partners__link">
+              <picture>
+                <source type="image/webp" srcset="img/partner-1.webp">
+                <img src="img/partner-1.png" alt="Партнер проекта автодрайв">
+              </picture>
+            </a>
+          </li>
+          <li class="partners__item">
+            <a class="partners__link">
+              <picture>
+                <source type="image/webp" srcset="img/partner-2.webp">
+                <img src="img/partner-2.png" alt="Партнер проекта автодрайв">
+              </picture>
+            </a>
+          </li>
+          <li class="partners__item">
+            <a class="partners__link">
+              <picture>
+                <source type="image/webp" srcset="img/partner-3.webp">
+                <img src="img/partner-3.png" alt="Партнер проекта автодрайв">
+              </picture>
+            </a>
+          </li>
+          <li class="partners__item">
+            <a class="partners__link">
+              <picture>
+                <source type="image/webp" srcset="img/partner-4.webp">
+                <img src="img/partner-4.png" alt="Партнер проекта автодрайв">
+              </picture>
+            </a>
+          </li>
+        </div>
+      </div>
+    </section>
+    <section class="rewards">
+      <div class="subwrap">
+        <h2 class="title">Мы умеем делать лучшие новости</h2>
+        <p class="text-center">Это доказывает 15 летний опыт на рынке. А также присужденные награды и премии:</p>
+        <ul class="rewards__list reward-slider hidden">
+          <li class="rewards__item rewards-item">
+            <div class="rewards-item__img-wrapper">
+              <picture>
+                <source type="image/webp" srcset="img/item-1.webp">
+                <img class="rewards-item__img" src="img/item-1.png" alt="Хрустальный микрофон">
+              </picture>
+            </div>
+            <span class="rewards-item__year">2018 г.</span>
+            <p class="rewards-item__name">«Хрустальный микрофон»</p>
+          </li>
+          <li class="rewards__item rewards-item">
+            <div class="rewards-item__img-wrapper">
+              <picture>
+                <source type="image/webp" srcset="img/item-2.webp">
+                <img class="rewards-item__img" src="img/item-2.png" alt="РадиоИмидж 2017">
+              </picture>
+            </div>
+            <span class="rewards-item__year">2017 г.</span>
+            <p class="rewards-item__name">«РадиоИмидж 2017»</p>
+            <p class="rewards-item__deskr">Номинация: Радио в сети. Сделано в Кирове</p>
+          </li>
+          <li class="rewards__item rewards-item">
+            <div class="rewards-item__img-wrapper">
+              <picture>
+                <source type="image/webp" srcset="img/item-3.webp">
+                <img class="rewards-item__img" src="img/item-3.png" alt="Вместе радио">
+              </picture>
+            </div>
+            <span class="rewards-item__year">2008-2009 г.</span>
+            <p class="rewards-item__name">«Вместе радио»</p>
+            <p class="rewards-item__deskr">Репортаж</p>
+          </li>
+          <li class="rewards__item rewards-item">
+            <div class="rewards-item__img-wrapper">
+              <picture>
+                <source type="image/webp" srcset="img/item-4.webp">
+                <img class="rewards-item__img" src="img/item-4.png" alt="Вместе радио">
+              </picture>
+            </div>
+            <span class="rewards-item__year">2004-2005 г.</span>
+            <p class="rewards-item__name">«Вместе радио»</p>
+            <p class="rewards-item__deskr">Ежедневный информационный выпуск</p>
+          </li>
+          <li class="rewards__item rewards-item">
+            <div class="rewards-item__img-wrapper">
+              <picture>
+                <source type="image/webp" srcset="img/item-5.webp">
+                <img class="rewards-item__img" src="img/item-5.png" alt="Вместе радио">
+              </picture>
+            </div>
+            <span class="rewards-item__year">2004-2005 г.</span>
+            <p class="rewards-item__name">«Вместе радио»</p>
+            <p class="rewards-item__deskr">Ежедневный информационный выпуск</p>
+          </li>
+          <li class="rewards__item rewards-item">
+            <div class="rewards-item__img-wrapper">
+              <picture>
+                <source type="image/webp" srcset="img/item-6.webp">
+                <img class="rewards-item__img" src="img/item-6.png" alt="Вместе радио">
+              </picture>
+            </div>
+            <span class="rewards-item__year">2004-2005 г.</span>
+            <p class="rewards-item__name">«Вместе радио»</p>
+            <p class="rewards-item__deskr">Ежедневный информационный выпуск</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section id="nav-discount" class="script">
+      <div class="wrap">
+        <div class="bubles-left">
+          <div class="ball ball-o pos-11"><span class="visually-hidden">Декоративный шарик</span></div>
+          <div class="ball ball-f pos-13"><span class="visually-hidden">Декоративный шарик</span></div>
+          <div class="ball ball-y pos-15"><span class="visually-hidden">Декоративный шарик</span></div>
+          <div class="ball ball-i pos-18"><span class="visually-hidden">Декоративный шарик</span></div>
+        </div>
+
+        <div class="bubles-right">
+          <div class="ball ball-o pos-12"><span class="visually-hidden">Декоративный шарик</span></div>
+          <div class="ball ball-y pos-14"><span class="visually-hidden">Декоративный шарик</span></div>
+          <div class="ball ball-v pos-16"><span class="visually-hidden">Декоративный шарик</span></div>
+          <div class="ball ball-i pos-17"><span class="visually-hidden">Декоративный шарик</span></div>
+        </div>
+        <div class="subwrap">
+          <div class="script-block script-block--man">
+            <div class="script-block__top">
+              <h3 class="script-block__title">Закажите годовой тариф со скидкой</h3>
+              <div class="script-block__text-cont">
+                <p>Вы хотели бы не думать о рекламе своего продукта целый год и при этом оставаться в голове у потенциального клиента?</p>
+                <div class="gap-3"></div>
+              </div>
+              <div class="achieve-item">
+                <div class="achieve-item__img-wrapper">
+                  <img src="img/achieve-2.svg" alt="Иконка">
+                </div>
+                <p class="achieve-item__text achieve-item__text--white">Закажите «Автодрайв мультимедиа» на год и вы получите полный пакет услуг: радио, посты в соцсетях, видео на Youtube. Можно больше не думать о рекламе своего продукта. Мы изготовим всю рекламу за вас. Все информационные ресурсы, доступные водителям в дороге — ваши. Успейте заказать рекламную систему «Автодрайв мультимедиа» по минимальной цене.</p>
+              </div>
+              <h3 class="script-block__subtitle">Вы получите:</h3>
+              <div class="achieves-list">
+                <div class="achieve-item achieve-item--less">
+                  <div class="achieve-item__img-wrapper">
+                    <img src="img/achieve-3.svg" alt="Иконка">
+                  </div>
+                  <p class="achieve-item__text achieve-item__text--white">Две трансляции программы с вашей рекламой в день!</p>
+                </div>
+                <div class="achieve-item achieve-item--less">
+                  <div class="achieve-item__img-wrapper">
+                    <img src="img/achieve-4.svg" alt="Иконка">
+                  </div>
+                  <p class="achieve-item__text achieve-item__text--white">Ежедневные посты в четырёх популярных соцсетях</p>
+                </div>
+                <div class="achieve-item achieve-item--less">
+                  <div class="achieve-item__img-wrapper">
+                    <img src="img/achieve-5.svg" alt="Иконка">
+                  </div>
+                  <p class="achieve-item__text achieve-item__text--white">Видеоконверсию на Youtube</p>
+                </div>
+              </div>
+            </div>
+            <div class="script-block__bottom">
+              <div class="script-block__text-cont script-block__text-cont--black">
+                <b>Чтобы заказать «Автодрайв мультимедиа» по минимальной цене — забронируйте скидку</b>
+                <ol>
+                  <li>Закажите обратный звонок</li>
+                  <li>Выстроит стратегию рекламной кампании</li>
+                  <li>Составит БРИФ на производство рекламного ролика</li>
+                </ol>
+                <b class="little">После разговора с менеджером за вами закрепляется скидка. Вы можете оставить за собой право купить продукт по минимальной цене в течение двух месяцев.</b>
+                <div class="gap-4"></div>
+              </div>
+              <form class="form">
+                <div class="flex-wrap script-block--flex-wrap">
+                  <input type="tel" class="project-input script-block__input" placeholder="Телефон">
+                  <button class="button script-block__button" type="button">Заказать обратный звонок</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="main-footer">
+    <div class="wrap main-footer__wrap">
+
+      <div class="main-footer__left">
+        <div class="logo main-footer__logo">
+          <a href="#" class="logo__link">
+            <picture>
+              <source type="image/webp" srcset="img/logo.webp">
+              <img src="img/logo.png" alt="Логотип Мария ФМ">
+            </picture>
+          </a>
+        </div>
+        <p class="main-footer__text">Наш адрес:</p>
+        <p class="main-footer__text">г. Киров, Октябрьский пр-т, 120</p>
+      </div>
+      <div class="main-footer__right">
+        <nav>
+          <ul class="nav-list main-footer__nav-list">
+            <li class="nav-list__item">
+              <a href="#nav-main" class="nav-list__link">Главная</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#nav-adv" class="nav-list__link">Что входит в программу</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#nav-steps" class="nav-list__link">Этапы работы</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="#nav-test" class="nav-list__link">Тест-драйв</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="questions">
+          <p class="questions__text">Остались вопросы?</p>
+          <a href="#" data-fancybox="" data-src="#modal-questions" class="button main-header__button" type="button">Задать вопрос</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal-video" id="modal-1">
+    <div class="video-wrap">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/68IMGENYMA0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+  <div class="modal-main" id="modal-questions">
+    <h2 class="modal-main__title">У вас есть вопросы?</h2>
+    <div class="modal-main__content">
+      <form>
+        <p>Ниже вы можете задать любой интересующий вопрос.
+          Наш менеджер перезвонит и проконсультирует вас.</p>
+        <textarea class="modal-main__textarea" placeholder="Введите свой вопрос"></textarea>
+        <div class="flex-wrap modal-main__flex-wrap">
+          <input type="tel" class="project-input modal-main__input" placeholder="Введите номер телефона">
+          <button class="button" type="submit">Задать вопрос</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="modal-main modal-main--success" id="modal-success">
+    <h2 class="modal-main__title">Заявка успешно отправлена!</h2>
+
+    <div class="modal-main__content">
+      <p>Наш менеджер перезвонит вам в течение 10 минут</p>
+    </div>
+  </div>
+
+  <script src="js/vendor/jquery.min.js"></script>
+  <script src="js/vendor/slick/slick.min.js"></script>
+  <script src="js/vendor/fancybox/jquery.fancybox.min.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
