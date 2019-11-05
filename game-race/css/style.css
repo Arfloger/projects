@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    background-image: radial-gradient(rgb(75, 179, 89), rgb(83, 184, 97), rgb(91, 190, 105), rgb(98, 195, 113), rgb(106, 200, 121), rgb(114, 205, 129), rgb(122, 211, 136), rgb(130, 216, 144), rgb(138, 221, 152), rgb(145, 226, 160), rgb(153, 232, 168), rgb(161, 237, 176));
+}
+
+.car,
+.enemy {
+    width: 50px;
+    height: 100px;
+    position: absolute;
+    background: transparent url("../image/player.png") center / cover no-repeat;
+}
+
+.game-area {
+    margin: auto;
+    margin-top: 60px;
+    width: 300px;
+    height: calc(100vh - 60px);
+    position: relative;
+    background-color:#969494;
+    overflow: hidden;
+}
+
+.line {
+    width: 10px;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+}
+
+.start {
+    display: block;
+    width: 100%;
+    padding: 2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: #fff;
+    background-color: #00aeff;
+    border: none;
+    cursor: pointer;
+}
+
+.score {
+    padding: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #fff;
+    background-color: #df94d8;
+}
+
+.hide {
+    display: none;
+}
