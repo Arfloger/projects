@@ -1,0 +1,227 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  background-image: url("../img/back.jpg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: calc(100vh - 80px);
+}
+
+.field {
+  position: relative;
+  z-index: 2;
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  border: 15px solid #fff;
+  box-sizing: content-box;
+}
+
+.excel {
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  border: 1px solid #fff;
+}
+
+.mouse {
+  background-color: transparent;
+  background-image: url("../img/mouse.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  transform: scale(.7);
+  border: none;
+}
+
+.snakebody {
+  background-color: rgba(232, 107, 190, .9);
+  border-color: rgba(232, 107, 190, .9);
+}
+
+.head {
+  background-color: transparent;
+  background-image: url("../img/cat-head.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  transform: scale(1.6);
+  border: none;
+}
+
+.top-panel {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 20px;
+}
+
+.main-input {
+  min-width: 200px;
+  padding: 15px;
+  margin: 20px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+.planet {
+  position: absolute;
+  width: 380px;
+  height: 300px;
+  animation: 35s planet infinite linear;
+}
+
+.planet__main {
+  position: absolute;
+  top: 0;
+  left: 40px;
+  width: 300px;
+  height: 300px;
+  background-color: #ff5200;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.planet__item {
+  position: absolute;
+  width: 150px;
+  height: 30px;
+  background: #ff000096;
+  border-radius: 15px 20px;
+}
+
+.planet__item--1 {
+  top: 40px;
+  left: 10px;
+}
+
+.planet__item--2 {
+  width: 240px;
+  top: 115px;
+  right: -10px;
+  background: #dc800d;
+}
+
+.planet__item--3 {
+  bottom: 90px;
+  left: -20px;
+  background: #ffa500;
+}
+
+.planet__item--4 {
+  bottom: 110px;
+  right: -10px;
+  background: #ff000096;
+}
+
+.planet__round {
+  width: 380px;
+  height: 30px;
+  background: #bb9ba1;
+  position: absolute;
+  top: calc(50% - 15px);
+  left: 0;
+  border-radius: 50px;
+}
+
+.star {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.star--1 {
+  left: 10%;
+  top: 10%;
+  width: 20px;
+  height: 20px;
+  animation: 5s star infinite linear;
+}
+
+.star--2 {
+  left: 60%;
+  top: 10%;
+  width: 30px;
+  height: 20px;
+  animation: 3s star infinite linear;
+}
+
+.star--3 {
+  left: 20%;
+  top: 50%;
+  width: 10px;
+  height: 10px;
+  animation: 1s star infinite linear;
+}
+
+.star--4 {
+  right: 10%;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  animation: 15s star infinite linear;
+}
+
+.star--5 {
+  left: 36%;
+  top: 20%;
+  width: 40px;
+  height: 30px;
+  animation: 5s star infinite linear;
+}
+
+@keyframes planet {
+  0% {
+    top: -300px;
+    right: 300px;
+  }
+
+  100% {
+    top: 55%;
+    right: -380px;
+  }
+}
+
+@keyframes star {
+  0% {
+    background: #f6ecbf;
+  }
+
+  50% {
+    background: yellow;
+  }
+
+  100% {
+    background: #f6ecbf;
+  }
+}
