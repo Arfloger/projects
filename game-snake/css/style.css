@@ -6,14 +6,13 @@
 
 html,
 body {
+  font-family: sans-serif;
   margin: 0;
   background-image: url("../img/back.jpg");
   background-repeat: no-repeat;
   background-position: left center;
   background-size: cover;
   width: 100vw;
-  height: 100vh;
-  overflow: hidden;
 }
 
 .main {
@@ -93,6 +92,43 @@ body {
   border: none;
   border-radius: 5px;
   outline: none;
+}
+
+.modal {
+  min-width: 600px;
+  min-height: 300px;
+  padding: 30px 50px;
+  text-transform: uppercase;
+  background-color: #e7eaed;
+  color: #000;
+  position: fixed;
+  top: calc(100vh / 2 - 150px);
+  left: 50%;
+  z-index: 10;
+  transform: translateX(-50%);
+  text-align: center;
+  border:  10px solid rgba(232, 107, 190, .9);
+  border-radius: 5px;
+  z-index: 5;
+}
+
+.modal::after {
+  content: "";
+  width: 150px;
+  height: 200px;
+  background-image: url("../img//king.png");
+  background-repeat: no-repeat;
+  background-size: 150px;
+  position: absolute;
+  top: -110px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.modal b {
+  display: block;
+  margin-bottom: 25px;
+  color: #0f2c4d;
 }
 
 .planet {
@@ -198,6 +234,67 @@ body {
   width: 40px;
   height: 30px;
   animation: 5s star infinite linear;
+}
+
+.button {
+  --width: 210px;
+  --height: 70px;
+  --begin: #0f2c4d;
+  --end: rgba(232, 107, 190, .9);
+  margin: 10px auto;
+  position: relative;
+  display: block;
+  border: 1px solid transparent;
+  background-color: transparent;
+  min-width: var(--width);
+  min-height: var(--height);
+  color: var(--begin);
+  font-size: 24px;
+  font-weight: bold;
+  line-height: var(--height);
+  letter-spacing: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 2s;
+}
+
+.button__svg,
+.button__rect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: var(--width);
+  height: var(--height);
+  fill: transparent;
+}
+
+.button__rect {
+  stroke: var(--begin);
+  stroke-width: 5;
+  stroke-dasharray: var(--height) var(--width);
+  stroke-dashoffset: calc(2 * var(--width) + 2 * var(--height) + var(--height) / 2);
+  transition: 2s;
+}
+
+.button:hover,
+.button:focus {
+  outline: none;
+  color: var(--end);
+}
+
+.button:hover .button__rect,
+.button:focus .button__rect {
+  stroke:var(--end);
+  stroke-dashoffset: calc(var(--height) + var(--height) / 2);
+}
+
+.no-scroll {
+  position: fixed;
+}
+
+.hidden {
+  display: none;
 }
 
 @keyframes planet {
