@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="no-scroll">
   <div class="top-panel">
     <input class="main-input" type="text" readonly>
     <audio class="main-audio" src="audio/Mark_Snow_-_Materia_Primoris_The_X-Files_Theme_Main_Title.mp3" autoplay="true" loop="true" controls></audio>
@@ -27,6 +27,25 @@
   <div class="star star--4"></div>
   <div class="star star--5"></div>
   <div class="main"></div>
+
+  <div class="modal">
+    <b>Выберите уровень сложности, чтобы начать игру</b>
+    <button class="button" data-level="300">
+      <svg class="button__svg">
+        <rect class="button__rect"></rect>
+      </svg>
+       Стажер</button>
+    <button class="button" data-level="200">
+        <svg class="button__svg">
+            <rect class="button__rect"></rect>
+          </svg>
+      Мастер</button>
+    <button class="button" data-level="100">
+        <svg class="button__svg">
+            <rect class="button__rect"></rect>
+          </svg>
+          Богиня</button>
+  </div>
   <script src="js/script.js"></script>
 </body>
 
