@@ -1,20 +1,23 @@
 const field = document.createElement(`div`);
 const main = document.querySelector(`.main`);
 const scoreInput = document.querySelector(`.main-input`);
-const startButtons = document.querySelectorAll(`.button`);
-const modal = document.querySelector(`.modal`);
+const startButtons = document.querySelectorAll(`[data-level]`);
+const modal = document.querySelector(`.modal--start`);
+const modalRestart = document.querySelector(`.modal--again`);
+const modalCount = document.querySelector(`.modal__count`);
+const restartButton = document.querySelector(`[data-restart]`);
 
 const cellQuantity = 100;
-let direction = 'right';
-let steps = false;
-let speed = 300;
 let score = 0;
+let isStart = false;
+let direction;
+let steps;
+let speed;
 let interval;
 let snakeBody;
 let mouse;
-let isStart = false;
-let x = 1;
-let y = 10;
+let x;
+let y
 let KeyCode = {
   left: 37,
   up: 38,
@@ -26,6 +29,7 @@ function init() {
   for (let i = 0; i < startButtons.length; i++ ) {
     startButtons[i].addEventListener(`click`, (evt) => {
       speed = startButtons[i].dataset.level;
+      isStart = true;
       startGame();
     })
   };
@@ -34,15 +38,30 @@ function init() {
 init();
 
 function startGame() {
+  if (isStart) {
+  snakeBody = null;
   modal.classList.add(`hidden`);
   scoreInput.value = `очки: ${score}`;
   field.classList.add(`field`);
   main.appendChild(field);
+  x = 1;
+  y = 10;  
+  direction = 'right';
+  steps = false;
   createField();
   createSnake();
   createMouse();
   interval = setInterval(move, speed);
   snakeControl();
+  }
+}
+
+function restartGame() {
+  modalRestart.classList.add(`hidden`);
+  modal.classList.remove(`hidden`);
+  score = 0;
+  scoreInput.value = score;
+  restartButton.removeEventListener(`click`, restartGame);
 }
 
 function createField() {
@@ -74,6 +93,7 @@ function generateSnake() {
 }
 
 function createSnake() {
+
   let coordinates = generateSnake();
   snakeBody = [
     document.querySelector(`[posX="${coordinates[0]}"][posY="${coordinates[1]}"]`),
@@ -153,8 +173,14 @@ function move() {
   }
 
   if (snakeBody[0].classList.contains(`snakebody`)) {
-    alert(`Игра окончена`);
+    isStart = false;
+    modalRestart.classList.remove(`hidden`);
+    modalCount.textContent = score;
     clearInterval(interval);
+    main.innerHTML = ``;
+    field.innerHTML = ``;
+    restartButton.addEventListener(`click`, restartGame);
+    return
   }
 
   snakeBody[0].classList.add(`head`);
