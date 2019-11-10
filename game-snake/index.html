@@ -28,7 +28,7 @@
   <div class="star star--5"></div>
   <div class="main"></div>
 
-  <div class="modal">
+  <div class="modal modal--start">
     <b>Выберите уровень сложности, чтобы начать игру</b>
     <button class="button" data-level="300">
       <svg class="button__svg">
@@ -46,6 +46,21 @@
           </svg>
           Богиня</button>
   </div>
+
+  <div class="modal modal--again hidden">
+    <b class="modal__text">Игра окончена</b>
+    <b class="modal__text">Вы набрали очков:</b>
+    <b class="modal__count">200</b>
+
+
+    <button class="button modal__button" data-restart>
+        <svg class="button__svg">
+            <rect class="button__rect"></rect>
+          </svg>
+          Играть
+        </button>
+  </div>
+
   <script src="js/script.js"></script>
 </body>
 
