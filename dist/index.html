@@ -3,13 +3,11 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preload" href="./assets/fonts/raleway-regular.woff" type="font/woff" as="font" crossorigin="anonymous">
-    <link rel="preload" href="./assets/fonts/raleway-bold.woff" type="font/woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./assets/fonts/segoe-ui-light.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="./assets/fonts/segoe-ui-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-    <title>Летняя it-школа</title>
-    <link rel="stylesheet" href="assets/js/vendors/fancybox/jquery.fancybox.min.css">
-  <link href="assets/css/app.d1fce992ee0fa3430f5e.css" rel="stylesheet"></head>
-  <body itemscope="" itemtype="http://schema.org/Organization">
+    <title>Онлайн марафон Познание</title>
+  <link href="assets/css/app.749451b0f6a46d477f10.css" rel="stylesheet"></head>
+  <body>
     <noscript>
       <style>
         .center {
@@ -24,710 +22,364 @@
         <p class="center">Ваш браузер не поддерживает javaScript. Сайт может отображаться некорректно.</p>
       </div>
     </noscript>
-<header class="main-header">
-  <div class="main-header__fixed">
-    <div class="main-header__top">
-      <div class="main-header__container main-header__flex">
-        <div class="main-header__left">
-          <div class="burger">
-            <button class="burger-btn" aria-label="Открытие меню"></button>
-          </div>
-          <div class="main-header__social social">
-            <ul class="social__list">
-              <li class="social__item"><a class="social__link social__link--vk" href="https://vk.com/itpoznanie" aria-label="Мы в ВК" target="_blank"></a></li>
-              <li class="social__item"><a class="social__link social__link--inst" href="https://www.instagram.com/poznanie_kirov/?hl=ru" aria-label="Мы в Инстаграм" target="_blank"></a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="main-header__right">
-          <div class="tel main-header__tel"><span>Есть вопросы? Звоните</span><a href="tel:88332447484" itemprop="telephone">8 8332 44 74 84</a></div>
-        </div>
-      </div>
-    </div>
-    <div class="main-header__wrapper">
+<div class="main-header-fix">   
+  <header class="main-header">
+    <div class="container">
       <div class="main-header__container">
-        <div class="nav">
-          <div class="nav__left">
+        <div class="burger">
+          <button class="burger-btn" aria-label="Открытие меню"></button>
+        </div>
+        <div class="main-header__wrap">
+          <div class="logo"><img class="logo__img" src="./assets/img/assets/logo.png" width="345" alt="Логотип онлайн марафон для родителей"></div>
+          <nav class="nav main-header__nav">
             <ul class="nav__list">
-              <li class="nav__item"><a class="nav__link" href="#nav-program" data-gap="140" data-mob="60">Программа           </a></li>
-              <li class="nav__item"><a class="nav__link" href="#nav-price" data-gap="-80" data-mob="-230">Стоимость</a></li>
-              <li class="nav__item"><a class="nav__link" href="#nav-place" data-gap="170" data-mob="60">Место проведения</a></li>
-            </ul>
-          </div>
-          <div class="logo"></div>
-          <div class="nav__right">
-            <ul class="nav__list">
-              <li class="nav__item"><a class="nav__link" href="#nav-rew" data-gap="140" data-mob="50">Отзывы</a></li>
+              <li class="nav__item"><a class="nav__link" href="#nav-about" data-gap="140" data-mob="60">О проекте </a></li>
+              <li class="nav__item"><a class="nav__link" href="#nav-form" data-gap="150" data-mob="-230"> Принять участие</a></li>
               <li class="nav__item"><a class="nav__link" href="#nav-contacts" data-gap="140" data-mob="140">Контакты</a></li>
-              <li class="nav__item nav__button-wrap"><a class="button" href="#nav-book" data-gap="240" data-mob="140">Забронировать</a></li>
+              <li class="nav__item"><a class="nav__link" href="https://vk.com/poznanieonline" target="_blank" data-gap="140" data-mob="140">Новости проекта</a></li>
             </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</header>
-    <main>
-<section class="lead">
-  <div class="lead__container" data-parallax="scroll" data-image-src="./assets/img/mock/back-lead.jpg">
-    <div class="lead__wrap">
-      <h1 class="lead__title title" itemprop="name">Профильная смена <span>«Летняя it-школа»</span></h1><span class="lead__label">1 по 21 августа 2020 года</span>
-    </div>
-  </div>
-</section>
-      <div class="greeting">
-        <div class="form greeting__form">
-          <form>
-            <div class="form__wrap">
-              <div class="input-field">
-                <input class="project-input" id="child" type="text" required>
-                <label class="project-label" for="child">Имя ребенка</label>
-              </div>
-              <div class="input-field">
-                <input class="project-input" id="parent" type="text" required>
-                <label class="project-label" for="parent">Имя родителя</label>
-              </div>
-              <div class="input-field">
-                <input class="project-input" id="tel" type="tel" required>
-                <label class="project-label" for="tel">Телефон</label>
-              </div>
+          </nav>
+          <div class="main-header__contacts">
+            <div class="social">
+              <ul class="social__list">
+                <li class="social__item"><a class="social__link social__link--inst" href="https://www.instagram.com/roditeli_online/?igshid=1m2xe3zs1ayr" aria-label="Мы в Инстаграм" target="_blank"></a></li>
+                <li class="social__item"><a class="social__link social__link--web" href="http://itpoznanie.ru/" aria-label="Наш сайт" target="_blank"></a></li>
+              </ul>
             </div>
-          </form>
-          <button class="form__button button btn-reservation">Забронировать</button>
-          <p class="form__agree">Нажимая на кнопку «Забронировать», Вы соглашаетесь с <a class="policy-link" href="/privacy-policy" target="_blank">политикой конфиденциальности</a></p>
-        </div>
-        <div class="greeting__container greeting__container--top">
-          <div class="greeting__wrapper">
-            <p>Привет! Присоединяйся <br>в команду увлеченных участников <br>«Летней <span class="blue">IT-школы</span>»</p>
           </div>
-        </div>
+        </div><a class="btn-tel" href="tel:88332447484" aria-label="Позвонить нам"></a>
       </div>
-<div class="features">
-  <div class="container">
-    <ul class="features__list">
-      <li class="features__item"><b class="features__number" id="num-1">7</b> лет
-        <p class="features__deskr">ежегодно в августе проводится «Летняя IT-школа»</p>
-      </li>
-      <li class="features__item"><b class="features__number" id="num-2">730</b> детей
-        <p class="features__deskr">стали участниками профильных смен, прокачали навыки и нашли новых друзей.</p>
-      </li>
-      <li class="features__item"><b class="features__number" id="num-3">48</b> занятий
-        <p class="features__deskr"><span>по программированию, </span><span>робототехнике, </span><span>микроэлектронике, </span><span>3D-моделированию, </span><span>криптографии  </span>посещает ребенок за смену </p>
-      </li>
-      <li class="features__item"><b class="features__number" id="num-4">67</b> % детей
-        <p class="features__deskr">приезжают в лагерь уже не первый год</p>
-      </li>
-    </ul>
+    </div>
+  </header>
+</div>
+<div class="mobile-menu">
+  <div class="mobile-menu__wrap">
+    <div class="mobile-menu__container">
+      <button class="close" aria-label="Закрыть"></button>
+      <nav class="mobile-menu-nav">
+        <ul class="mobile-menu-nav__list">
+          <li class="mobile-menu-nav__item"><a class="mobile-menu-nav__link" href="#nav-about" data-gap="140" data-mob="80">О проекте</a></li>
+          <li class="mobile-menu-nav__item"><a class="mobile-menu-nav__link" href="#nav-form" data-gap="150" data-mob="60">Принять участие</a></li>
+          <li class="mobile-menu-nav__item"><a class="mobile-menu-nav__link" href="#nav-map" data-gap="150" data-mob="80">Карта участия</a></li>
+          <li class="mobile-menu-nav__item"><a class="mobile-menu-nav__link" href="#nav-team" data-gap="150" data-mob="60">Команда</a></li>
+          <li class="mobile-menu-nav__item"><a class="mobile-menu-nav__link" href="#nav-contacts" data-gap="150" data-mob="80">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="social mobile-menu__social"><span>Мы в соц. сетях</span>
+        <ul class="social__list">
+          <li class="social__item"><a class="social__link social__link--web" href="http://itpoznanie.ru/" aria-label="Наш сайт" target="_blank"></a></li>
+          <li class="social__item"><a class="social__link social__link--inst" href="https://www.instagram.com/roditeli_online/?igshid=1m2xe3zs1ayr" aria-label="Мы в Инстаграм" target="_blank"></a></li>
+          <li class="social__item"><a class="social__link social__link--vk" href="https://vk.com/poznanieonline" aria-label="Мы в ВК" target="_blank"></a></li>
+        </ul>
+      </div>
+      <div class="tel mobile-menu__tel"><span> Есть вопросы? Звоните</span><a href="tel:88332447484">8 (8332) 44 74 84</a></div>
+    </div>
   </div>
 </div>
-<section class="advantages">
-  <div class="advantages__container">
-    <div class="container">
-      <h2 class="title">Почему дети выбирают «Летнюю IT-школу»</h2>
-      <div class="advantages-slider">
-        <article class="advantage">
-          <div class="advantage__wrap">
-            <h2 class="advantage__title">Доступная программа </h2>
-            <p class="advantage__deskr">В лагере будет комфортно, как новичкам, так и профессионалам в it-сфере. Учебные занятия делятся по возрастам и уровню знаний.</p>
+    <main>
+      <h1 class="visually-hidden">Онлайн марафон Познание для родителей по сопровождению детей в проектной инженерно-технической деятельности</h1>
+      <section class="lead">
+        <div class="container-max lead__back">
+          <div class="container">
+            <div class="lead__wrap">
+              <div class="lead__left"><img class="lead__logo" src="./assets/img/assets/logo-goal.svg" alt="Онлайн марафон Познание"></div>
+              <div class="lead__right">
+                <div class="lead__logo-wrap lead__logo-wrap--grand"><img class="lead__logo" src="./assets/img/assets/logo-2.png" width="305" alt="Лого фонда президентских грантов"></div>
+                <div class="lead__logo-wrap"><img class="lead__logo" src="./assets/img/assets/deskr.png" width="510" alt="Онлайн марафон Познание"></div>
+              </div>
+            </div>
+            <div class="form lead__form" id="nav-form">
+              <form>
+                <div class="form__container">
+                  <div class="form__wrap">
+                    <div class="input-field">
+                      <input class="project-input" id="name" type="text" required>
+                      <label class="project-label" for="name">Ваше имя</label>
+                    </div>
+                    <div class="input-field">
+                      <input class="project-input" id="tel" type="tel" required>
+                      <label class="project-label" for="tel">Телефон</label>
+                    </div>
+                    <button class="form__button button btn-reservation" data-fancybox="" data-src="#modal-success">Принять участие</button>
+                  </div>
+                  <p class="form__agree">Нажимая на кнопку «Принять участие», Вы соглашаетесь с <a class="policy-link" href="/privacy-policy" target="_blank"> политикой конфиденциальности</a></p>
+                </div>
+              </form>
+            </div>
           </div>
-        </article>
-        <article class="advantage">
-          <div class="advantage__wrap">
-            <h2 class="advantage__title">Баланс учебы и развлечений  </h2>
-            <p class="advantage__deskr">Дети в лагере всегда в движении: спортивные и интеллектуальные игры, креатив-бои, фестиваль мейкерства, фестиваль красок холи, квесты, чемпионаты по кодингу, съемки фильмов.</p>
+        </div>
+      </section>
+      <section class="about" id="nav-about">
+        <div class="container">
+          <h2 class="title">О проекте</h2>
+          <h3 class="sub-title">Для кого?</h3>
+          <ul class="features">
+            <li class="features__item features__item--parents"><b>Для родителей</b>, которые хотят раскрыть потенциал ребёнка, которые хотят соответствовать духу времени.</li>
+            <li class="features__item features__item--teachers"><b>Для педагогов и наставников</b>, сопровождающих детское проектирование в образовательном учреждении.</li>
+          </ul>
+        </div>
+        <div class="container-max">
+          <div class="about__wrap">
+            <div class="container">
+              <h3 class="sub-title">Почему это интересно?</h3>
+              <ul class="project-list about__list">
+                <li class="project-list__item">обучение проектной деятельности, не выходя из дома,</li>
+                <li class="project-list__item">мотивация и поддержка участников марафона,</li>
+                <li class="project-list__item">личный кабинет с полезными материалами и консультациями специалистов,</li>
+                <li class="project-list__item">созданный и проработанный совместно с ребенком инженерно-технический проект,</li>
+                <li class="project-list__item">возможность представить свою работу на всероссийском онлайн-фестивале и посмотреть проекты детей из других регионов,</li>
+                <li class="project-list__item">перспектива стать участником очного фестиваля в городе Кирове.</li>
+              </ul>
+              <div class="form about__form">
+                <form>
+                  <div class="form__container">
+                    <div class="form__wrap">
+                      <div class="input-field">
+                        <input class="project-input" id="name2" type="text" required>
+                        <label class="project-label" for="name2">Ваше имя</label>
+                      </div>
+                      <div class="input-field">
+                        <input class="project-input" id="tel2" type="tel" required>
+                        <label class="project-label" for="tel2">Телефон</label>
+                      </div>
+                      <button class="form__button button btn-reservation">Принять участие</button>
+                    </div>
+                    <p class="form__agree">Нажимая на кнопку «Принять участие», Вы соглашаетесь с <a class="policy-link" href="/privacy-policy" target="_blank"> политикой конфиденциальности</a></p>
+                  </div>
+                </form>
+              </div>
+            </div>
           </div>
-        </article>
-        <article class="advantage">
-          <div class="advantage__wrap">
-            <h2 class="advantage__title">Полезные занятия </h2>
-            <p class="advantage__deskr">Программа «Летней it-школы» разработана кандидатом педагогических наук и включает практику, лекции и мастер-классы от представителей престижных компаний. Здесь каждый день кипит научная, исследовательская и творческая работа.</p>
-          </div>
-        </article>
-        <article class="advantage">
-          <div class="advantage__wrap">
-            <h2 class="advantage__title">Сильный педагогический состав</h2>
-            <p class="advantage__deskr">Обучение проходит в том виде, который так нравится детям – с молодыми умными преподавателями, в игровом формате по современным программам.</p>
-          </div>
-        </article>
-        <article class="advantage">
-          <div class="advantage__wrap">
-            <h2 class="advantage__title">Вектор в будущее</h2>
-            <p class="advantage__deskr">Мы смотрим в будущее и даем навыки, с которыми дети будут успешны. Изучаем основы программирования на Python, Pascal, С#, разрабатываем свои 3D-игры, программируем миры Minecraft, знакомимся с криптографией, сайтостроением и многим другим!</p>
-          </div>
-        </article>
-        <article class="advantage">
-          <div class="advantage__wrap">
-            <h2 class="advantage__title">Предоставляем все оборудование  </h2>
-            <p class="advantage__deskr">Наборы по робототехнике, ноутбуки и компьютеры, паяльные станции и 3D-принтер – есть все. Ничего везти с собой не нужно.</p>
-          </div>
-        </article>
+        </div>
+      </section>
+<section class="events">
+  <div class="container">
+    <h2 class="title events__title">Ключевые мероприятия:</h2><span class="events__date">с апреля 2020 по июнь 2021 года</span>
+    <ol class="event-list">
+      <li class="event"><span class="event__num">1</span>
+        <h3 class="event__name">Онлайн занятия с родителями</h3>
+        <p>12 увлекательных встреч о современных технологиях: робототехнике, трехмерном моделировании, VR, интернет-вещей и др. На занятиях родители узнают, как приручить «дикие» цифровые технологии и направить их на полное раскрытие потенциала детей.</p>
+        <p>12 занятий о том, как поддержать желание ребенка изобретать, улучшать, придумывать технические устройства и оформить свою идею в проекте. Будут даны конкретные и понятные приемы и инструменты, которые можно применить не только в проектной деятельности, но и в самых разных областях жизни. Например, как помочь детям справляться со стрессом и неуверенностью.</p>
+        <p>Консультации и обсуждения со специалистами.</p><b class="event__mark">Апрель – сентябрь 2020</b>
+      </li>
+      <li class="event"><span class="event__num">2</span>
+        <h3 class="event__name">Всероссийский онлайн-фестиваль инженерно-технических проектов</h3>
+        <p>Представим свои проекты, получим отзывы экспертов. Авторы лучших работ будут награждены поездкой на родительскую конференцию в город Киров.</p><b class="event__mark">Ноябрь 2020</b>
+      </li>
+      <li class="event"><span class="event__num">3</span>
+        <h3 class="event__name">Очная родительская конференция «Родитель в теме» в городе Кирове</h3>
+        <p>На очной родительской конференции «Родитель в теме» мы поразмышляем, как учить и воспитывать детей фиджитал поколения, для которых границы между реальным и виртуальным не существует, а технологии пронизывают их жизнь насквозь. Чем они отличаются, что мы знаем об их внутреннем мире? Что ждет их в будущем, какие ценности сохранятся, а какие существенно изменятся? К чему готовить детей? Постараемся найти ответы на эти и другие вопросы.</p><b class="event__mark">Апрель 2021</b>
+      </li>
+    </ol>
+  </div>
+</section>
+<div class="participants">
+  <div class="container">
+    <div class="participants__wrap participants-slider">
+      <div class="participant">
+        <div class="participant__wrap"><span class="participant__title">Участники</span>
+          <p>500 родителей дошкольников и младших школьников из разных регионов: Кировской, Псковской, Свердловской областей, Республики Карелия.</p>
+          <p class="white">* к проекту могут подключиться и жители других регионов</p>
+        </div>
       </div>
-      <div class="advantages__wrapper">
-        <div class="advantages__left">
-          <article class="advantage">
-            <h2 class="advantage__title">Доступная программа </h2>
-            <p class="advantage__deskr">В лагере будет комфортно, как новичкам, так и профессионалам в it-сфере. Учебные занятия делятся по возрастам и уровню знаний.</p>
-          </article>
-          <article class="advantage">
-            <h2 class="advantage__title">Баланс учебы и развлечений  </h2>
-            <p class="advantage__deskr">Дети в лагере всегда в движении: спортивные и интеллектуальные игры, креатив-бои, фестиваль мейкерства, фестиваль красок холи, квесты, чемпионаты по кодингу, съемки фильмов.</p>
-          </article>
-          <article class="advantage">
-            <h2 class="advantage__title">Полезные занятия </h2>
-            <p class="advantage__deskr">Программа «Летней it-школы» разработана кандидатом педагогических наук и включает практику, лекции и мастер-классы от представителей престижных компаний. Здесь каждый день кипит научная, исследовательская и творческая работа.</p>
-          </article>
+      <div class="participant">
+        <div class="participant__wrap"><span class="participant__title">Стоимость участия </span>
+          <p>Бесплатно.</p>
         </div>
-        <div class="advantages__center">
-          <div class="advantages__img-wrap"><img class="lazyload advantages__img" src="./assets/img/assets/bird.png" data-src="/assets/img/mock/child.jpg" alt="Занятие по робототехнике"></div>
+      </div>
+      <div class="participant">
+        <div class="participant__wrap"><span class="participant__title">Организатор</span>
+          <p>Центр «Познание» при поддержке Фонда Президентских грантов.</p>
         </div>
-        <div class="advantages__right">
-          <article class="advantage">
-            <h2 class="advantage__title">Сильный педагогический состав</h2>
-            <p class="advantage__deskr">Обучение проходит в том виде, который так нравится детям – с молодыми умными преподавателями, в игровом формате по современным программам.</p>
-          </article>
-          <article class="advantage">
-            <h2 class="advantage__title">Вектор в будущее</h2>
-            <p class="advantage__deskr">Мы смотрим в будущее и даем навыки, с которыми дети будут успешны. Изучаем основы программирования на Python, Pascal, С#, разрабатываем свои 3D-игры, программируем миры Minecraft, знакомимся с криптографией, сайтостроением и многим другим!</p>
-          </article>
-          <article class="advantage">
-            <h2 class="advantage__title">Предоставляем все оборудование  </h2>
-            <p class="advantage__deskr">Наборы по робототехнике, ноутбуки и компьютеры, паяльные станции и 3D-принтер – есть все. Ничего везти с собой не нужно.</p>
-          </article>
+      </div>
+      <div class="participant">
+        <div class="participant__wrap"><span class="participant__title">Результат </span>
+          <p>не только готовый проект, с которым ребенок может выступить на школьных и других конференциях, а самое главное умение видеть сильные стороны своего ребенка, научить его сотрудничать и использовать современные технологии для созидания.</p>
         </div>
       </div>
     </div>
   </div>
-</section>
-      <section class="directions" id="nav-program">
-        <div class="directions__container-top">
-          <div class="directions__container">
-            <h2 class="title">Программа лагеря</h2>
-            <div class="directions__wrapper bird">
-              <article class="direction--robot direction">
-                <h3 class="direction__title">Робототехнические и IT-проекты</h3>
-                <p class="direction__deskr">Cоздаем проекты с использованием Lego Wedo, NXT, EV3, Arduino, Intel Genuino 101; программируем под Android, Scratch, Интернет вещей.</p>
-              </article>
-              <article class="direction--micro direction">
-                <h3 class="direction__title">Микроэлектроника</h3>
-                <p class="direction__deskr">Собираем, программируем уникальные электрические устройства, управляем различными двигателями и свето-звуковой сигнализацией.</p>
-              </article>
-              <article class="direction--programm direction">
-                <h3 class="direction__title">Программирование </h3>
-                <p class="direction__deskr">Программируем на языках Python, Pascal, C#, программирование сайтов и мобильных приложений.</p>
-              </article>
-              <article class="direction--stem direction">
-                <h3 class="direction__title">Stem-исследования</h3>
-                <p class="direction__deskr">Делаем проекты по изучению живой и не живой природы с использованием цифровых датчиков.</p>
-              </article>
-              <article class="direction--creative direction">
-                <h3 class="direction__title">Креатив и изобретательство</h3>
-                <p class="direction__deskr">получаем навыки 3D-моделирования, участвуем в креатив боях, Open space, фестивале мейкерства, конструируем Машины Голдберга.</p>
-              </article>
-              <article class="direction--lead direction">
-                <h3 class="direction__title">Лидерство и коммуникации</h3>
-                <p class="direction__deskr">учимся ориентироваться в мире информации, критически мыслить, выстраивать коммуникацию, сотрудничать, принимать решения, видеть свои слабые места и уметь работать над ними, учиться и переучиваться.</p>
-              </article>
-            </div>
-          </div>
-          <div class="form directions__form" id="nav-book">
-            <form>
-              <div class="form__wrap">
-                <div class="input-field">
-                  <input class="project-input" id="child2" type="text" required>
-                  <label class="project-label" for="child2">Имя ребенка</label>
-                </div>
-                <div class="input-field">
-                  <input class="project-input" id="parent2" type="text" required>
-                  <label class="project-label" for="parent2">Имя родителя</label>
-                </div>
-                <div class="input-field">
-                  <input class="project-input" id="tel2" type="tel" required>
-                  <label class="project-label" for="tel2">Телефон</label>
-                </div>
-              </div>
-            </form>
-            <button class="form__button button">Забронировать</button>
-          </div>
-        </div>
-        <div class="directions__inner">
-          <div class="directions__container">
-            <h2 class="title white">Образовательные маршруты по параллелям</h2>
-            <div class="directions__wrapper mob-slider">
-              <div class="direction-point"><b class="direction-point__age">8-10 лет</b><span class="direction-point__pos">Младшая параллель</span>
-                <ul class="direction-point__list">
-                  <li class="direction-point__item">программирование Scratch, </li>
-                  <li class="direction-point__item">разработка игры в Kodu Game Lab, </li>
-                  <li class="direction-point__item">DIY самоделки настольных игры, </li>
-                  <li class="direction-point__item">робототехника Wedo 2.0, </li>
-                  <li class="direction-point__item">основы робототехники Mindstorms NXT, </li>
-                  <li class="direction-point__item">программирование «Пиктомир», </li>
-                  <li class="direction-point__item">работа с графикой, с текстом, </li>
-                  <li class="direction-point__item">стем-исследования (изучение живой и неживой природы), </li>
-                  <li class="direction-point__item">работа с цифровым микроскопом.</li>
-                </ul>
-              </div>
-              <div class="direction-point"><b class="direction-point__age">11-13 лет</b><span class="direction-point__pos">Средняя параллель</span>
-                <ul class="direction-point__list">
-                  <li class="direction-point__item">программирование Pascal, </li>
-                  <li class="direction-point__item">программирование Small basic, </li>
-                  <li class="direction-point__item">программирование Scratch, </li>
-                  <li class="direction-point__item">основы робототехники Mindstorms NXT, </li>
-                  <li class="direction-point__item">DIY электронные самоделки, </li>
-                  <li class="direction-point__item">робототехника EV3, </li>
-                  <li class="direction-point__item">DIY Машины Голдберга, </li>
-                  <li class="direction-point__item">разработка игр в Java, </li>
-                  <li class="direction-point__item">разработка игр в Kodu Game Lab.</li>
-                </ul>
-              </div>
-              <div class="direction-point"><b class="direction-point__age">14-17 лет</b><span class="direction-point__pos">Старшая параллель</span>
-                <ul class="direction-point__list">
-                  <li class="direction-point__item">основы криптоанализа, </li>
-                  <li class="direction-point__item">подводная робототехника, </li>
-                  <li class="direction-point__item">микроэлектроника, </li>
-                  <li class="direction-point__item">программирование С, Wfrorm, </li>
-                  <li class="direction-point__item">DIY Машины Голдберга, </li>
-                  <li class="direction-point__item">ИТ-приложения – 3D моделирование.</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="gallery">
-        <div class="gallery__container">
-          <h2 class="title">3 недели счастья или 21 день не похожих друг на друга</h2>
-          <div class="container">
-            <div class="gallery__wrapper gallery-slider">
-              <article class="gallery-item">
-                <div class="gallery-item__wrap">
-                  <div class="gallery-item__img-wrap"><img class="lazyload gallery-item__img" src="./assets/img/assets/bird.png" data-src="/assets/img/mock/camp1.jpg" alt="Выпуски новостей «IT NEWS»"></div>
-                  <div class="gallery-item__hover">
-                    <h3 class="gallery-item__title">Выпуски новостей «IT NEWS»</h3><a class="gallery-item__button" data-fancybox="images" rel="gallery" href="/assets/img/mock/camp-big-1.jpg" aria-label="Увеличить фото"></a>
-                  </div>
-                </div>
-              </article>
-              <article class="gallery-item">
-                <div class="gallery-item__wrap">
-                  <div class="gallery-item__img-wrap"><img class="lazyload gallery-item__img" src="./assets/img/assets/bird.png" data-src="/assets/img/mock/camp-15.jpg" alt="Соревнования по роботехнике"></div>
-                  <div class="gallery-item__hover">
-                    <h3 class="gallery-item__title">Соревнования по роботехнике</h3><a class="gallery-item__button" data-fancybox="images" rel="gallery" href="/assets/img/mock/camp-big-15.jpg" aria-label="Увеличить фото"></a>
-                  </div>
-                </div>
-              </article>
-              <article class="gallery-item">
-                <div class="gallery-item__wrap">
-                  <div class="gallery-item__img-wrap"><img class="lazyload gallery-item__img" src="./assets/img/assets/bird.png" data-src="/assets/img/mock/camp3.jpg" alt="Проектные дни"></div>
-                  <div class="gallery-item__hover">
-                    <h3 class="gallery-item__title">Проектные дни</h3><a class="gallery-item__button" data-fancybox="images" rel="gallery" href="/assets/img/mock/camp-big-3.jpg" aria-label="Увеличить фото"></a>
-                  </div>
-                </div>
-              </article>
-              <article class="gallery-item">
-                <div class="gallery-item__wrap">
-                  <div class="gallery-item__img-wrap"><img class="lazyload gallery-item__img" src="./assets/img/assets/bird.png" data-src="/assets/img/mock/camp-12.jpg" alt="Костры и песни под гитару"></div>
-                  <div class="gallery-item__hover">
-                    <h3 class="gallery-item__title">Костры и песни под гитару</h3><a class="gallery-item__button" data-fancybox="images" rel="gallery" href="/assets/img/mock/camp-big-12.jpg" aria-label="Увеличить фото"></a>
-                  </div>
-                </div>
-              </article>
-              <article class="gallery-item">
-                <div class="gallery-item__wrap">
-                  <div class="gallery-item__img-wrap"><img class="lazyload gallery-item__img" src="./assets/img/assets/bird.png" data-src="/assets/img/mock/camp-7.jpg" alt="Кратив-бои"></div>
-                  <div class="gallery-item__hover">
-                    <h3 class="gallery-item__title">Кратив-бои</h3><a class="gallery-item__button" data-fancybox="images" rel="gallery" href="/assets/img/mock/camp-big-7.jpg" aria-label="Увеличить фото"></a>
-                  </div>
-                </div>
-              </article>
-              <article class="gallery-item">
-                <div class="gallery-item__wrap">
-                  <div class="gallery-item__img-wrap"><img class="lazyload gallery-item__img" src="./assets/img/assets/bird.png" data-src="/assets/img/mock/camp-14.jpg" alt="Геоигры"></div>
-                  <div class="gallery-item__hover">
-                    <h3 class="gallery-item__title">Геоигры</h3><a class="gallery-item__button" data-fancybox="images" rel="gallery" href="/assets/img/mock/camp-big-14.jpg" aria-label="Увеличить фото"></a>
-                  </div>
-                </div>
-              </article>
-              <article class="gallery-item">
-                <div class="gallery-item__wrap">
-                  <div class="gallery-item__img-wrap"><img class="lazyload gallery-item__img" src="./assets/img/assets/bird.png" data-src="/assets/img/mock/camp-10.jpg" alt="Выборы в IT совет"></div>
-                  <div class="gallery-item__hover">
-                    <h3 class="gallery-item__title">Выборы в IT совет</h3><a class="gallery-item__button" data-fancybox="images" rel="gallery" href="/assets/img/mock/camp-big-10.jpg" aria-label="Увеличить фото"></a>
-                  </div>
-                </div>
-              </article>
-              <article class="gallery-item">
-                <div class="gallery-item__wrap">
-                  <div class="gallery-item__img-wrap"><img class="lazyload gallery-item__img" src="./assets/img/assets/bird.png" data-src="/assets/img/mock/camp4.jpg" alt="Походы"></div>
-                  <div class="gallery-item__hover">
-                    <h3 class="gallery-item__title">Походы</h3><a class="gallery-item__button" data-fancybox="images" rel="gallery" href="/assets/img/mock/camp-big-4.jpg" aria-label="Увеличить фото"></a>
-                  </div>
-                </div>
-              </article>
-              <article class="gallery-item">
-                <div class="gallery-item__wrap">
-                  <div class="gallery-item__img-wrap"><img class="lazyload gallery-item__img" src="./assets/img/assets/bird.png" data-src="/assets/img/mock/camp2.jpg" alt="Робототехника"></div>
-                  <div class="gallery-item__hover">
-                    <h3 class="gallery-item__title">Робототехника</h3><a class="gallery-item__button" data-fancybox="images" rel="gallery" href="/assets/img/mock/camp-big-2.jpg" aria-label="Увеличить фото"></a>
-                  </div>
-                </div>
-              </article>
-              <article class="gallery-item">
-                <div class="gallery-item__wrap">
-                  <div class="gallery-item__img-wrap"><img class="lazyload gallery-item__img" src="./assets/img/assets/bird.png" data-src="/assets/img/mock/camp-13.jpg" alt="Встречи с IT-специалистами "></div>
-                  <div class="gallery-item__hover">
-                    <h3 class="gallery-item__title">Встречи с IT-специалистами </h3><a class="gallery-item__button" data-fancybox="images" rel="gallery" href="/assets/img/mock/camp-big-13.jpg" aria-label="Увеличить фото"></a>
-                  </div>
-                </div>
-              </article>
-              <article class="gallery-item">
-                <div class="gallery-item__wrap">
-                  <div class="gallery-item__img-wrap"><img class="lazyload gallery-item__img" src="./assets/img/assets/bird.png" data-src="/assets/img/mock/camp-11.jpg" alt="Творческие проекты «Машины Голдберга»"></div>
-                  <div class="gallery-item__hover">
-                    <h3 class="gallery-item__title">Творческие проекты «Машины Голдберга»</h3><a class="gallery-item__button" data-fancybox="images" rel="gallery" href="/assets/img/mock/camp-big-11.jpg" aria-label="Увеличить фото"></a>
-                  </div>
-                </div>
-              </article>
-              <article class="gallery-item">
-                <div class="gallery-item__wrap">
-                  <div class="gallery-item__img-wrap"><img class="lazyload gallery-item__img" src="./assets/img/assets/bird.png" data-src="/assets/img/mock/camp-9.jpg" alt="IT-кейсы от предприятий Кирова "></div>
-                  <div class="gallery-item__hover">
-                    <h3 class="gallery-item__title">IT-кейсы от предприятий Кирова </h3><a class="gallery-item__button" data-fancybox="images" rel="gallery" href="/assets/img/mock/camp-big-9.jpg" aria-label="Увеличить фото"></a>
-                  </div>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </section>
-<section class="residence" id="nav-place">
-  <div class="residence__container-top">
+</div>
+<section class="map" id="nav-map">
+  <div class="container-max">
     <div class="container">
-      <h2 class="title">Условия проживания</h2>
-      <div class="residence__wrapper">
-        <div class="residence__left">
-          <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d38178.587953957096!2d48.28764291673612!3d58.07029162188783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43fd79fdec5c6ea9%3A0xa47c14610a3606e7!2z0JTQtdGC0YHQutC40Lkg0LvQsNCz0LXRgNGMINCS0LjRiNC60LjQu9GM!5e0!3m2!1sru!2sru!4v1584294638775!5m2!1sru!2sru" width="600" height="450" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
+      <h2 class="map__title">Карта участия:</h2>
+      <ul class="map__list">
+        <li class="map__item">Республика Карелия.</li>
+        <li class="map__item">Пермский край.</li>
+        <li class="map__item">Кировская область.</li>
+        <li class="map__item">Псковская область.</li>
+        <li class="map__item">Свердловская область.</li>
+      </ul>
+      <p class="map__exclude">* к проекту могут подключиться и жители других регионов</p>
+    </div>
+  </div>
+</section>
+<section class="classes">
+  <div class="container">
+    <h2 class="title">12 занятий по технологиям:</h2>
+    <ul class="class-list">
+      <li class="class class--rb">Робототехника и сенсорика, машинное обучение, трехмерное моделирование, VR, интернет-вещей и др.</li>
+      <li class="class class--hd">Мастерилки «Машинка из бумаги и резинок», «Инженерный театр» и др.</li>
+      <li class="class class--mk">Мастер-классы по созданию проекта в ScratchJr, по разработке проектов с Lego Wedo 2.0, по демонстрации работы технических систем в мультфильме и др.</li>
+    </ul>
+  </div>
+</section>
+      <section class="project">
+        <div class="container-max">
+          <div class="container">
+            <h2 class="title project__title">12 занятий по сопровождению детей в разработке проекта:</h2>
+            <div class="project__wrap">
+              <ul class="project-list project__project-list">
+                <li class="project-list__item">Технические идеи. Как и где их найти?</li>
+                <li class="project-list__item">Фиджитал поколение. Как организовать совместную деятельность? Этапы планирования проекта, роли и вклад участников.</li>
+                <li class="project-list__item">Как технологично организовать работу над проектом: Знакомим родителей с сервисами.</li>
+                <li class="project-list__item">Каким информационным источникам стоит доверять и все ли из них подходят детям.</li>
+                <li class="project-list__item">Подбираем материалы и технологии для инженерно-технического проекта.</li>
+                <li class="project-list__item">Система 3F (fun - веселье; familay – семья; friendship – дружба) – залог успеха.</li>
+                <li class="project-list__item">Детские фестивали, конкурсы, соревнования – как подготовиться содержательно и эмоционально.</li>
+              </ul>
+              <div class="form project__form">
+                <form>
+                  <div class="form__container">
+                    <div class="form__wrap">
+                      <div class="input-field">
+                        <input class="project-input" id="name3" type="text" required>
+                        <label class="project-label" for="name3">Ваше имя</label>
+                      </div>
+                      <div class="input-field">
+                        <input class="project-input" id="tel3" type="tel" required>
+                        <label class="project-label" for="tel3">Телефон</label>
+                      </div>
+                      <button class="form__button button btn-reservation">Принять участие</button>
+                    </div>
+                    <p class="form__agree">Нажимая на кнопку «Принять участие», Вы соглашаетесь с <a class="policy-link" href="/privacy-policy" target="_blank"> политикой конфиденциальности</a></p>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="residence__right">
-          <p>В живописном месте на берегу реки Вятка</p>
-          <p>Летняя IT-школа – располагается в красивом месте <span itemprop="address">Кировской области, селе Вишкиль (Котельничский район)</span>, в 140 км от города Кирова.</p>
-          <ul class="project-list">
-            <li class="project-list__item del1">Дежурный врач 24/7</li>
-            <li class="project-list__item del2">Охраняемая огороженная территория, видеонаблюдение</li>
-            <li class="project-list__item del3">Отапливаемые корпуса</li>
-            <li class="project-list__item del4">Березовые рощи в сосновый бор</li>
+      </section>
+<section class="organizer">
+  <div class="container">
+    <h2 class="title">Организатор</h2>
+    <p>Организатор проекта Центр «Познание» при поддержке Фонда президентских грантов. Центр информационных технологий «Познание» (город Киров) уже 20 лет успешно реализует обучение для детей и взрослых в ИТ-сфере, является организатором региональных и всероссийских социальных проектов <a href="http://itpoznanie.ru/">itpoznanie.ru</a></p>
+  </div>
+</section>
+      <section class="teams" id="nav-team">
+        <div class="container">
+          <h2 class="title teams__title">Команда Онлайн-марафона </h2>
+          <div class="team-item team-item--main">
+            <div class="team-item__wrapper">
+              <div class="team-item__left">
+                <div class="team-item__img-wrap"><img class="lazyload team-item__img" src="./assets/img/mock/person-1.jpg" data-src="" alt="Инна Вылегжанина "></div>
+              </div>
+              <div class="team-item__right">
+                <div class="team-item__info"><span class="team-item__pos">Руководитель проекта</span>
+                  <h3 class="team-item__name">Инна Вылегжанина </h3>
+                  <p class="team-item__deskr">Кандидат педагогических наук, эксперт и организатор региональных и российских проектов, директор Центра «Познание»</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h3 class="teams__sub-title">Региональные организаторы онлайн марафона:</h3>
+          <div class="teams__wrapper">
+            <div class="teams-slider">
+              <div class="team-item">
+                <div class="team-item__wrapper">
+                  <div class="team-item__left">
+                    <div class="team-item__img-wrap"><img class="lazyload team-item__img" src="./assets/img/mock/person-2.jpg" data-src="" alt="Екатерина Волоскова"></div>
+                  </div>
+                  <div class="team-item__right">
+                    <div class="team-item__info"><span class="team-item__city">Киров</span>
+                      <h3 class="team-item__name">Екатерина Волоскова</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="team-item">
+                <div class="team-item__wrapper">
+                  <div class="team-item__left">
+                    <div class="team-item__img-wrap"><img class="lazyload team-item__img" src="./assets/img/mock/person-3.jpg" data-src="" alt="Ольга Урсова"></div>
+                  </div>
+                  <div class="team-item__right">
+                    <div class="team-item__info"><span class="team-item__city">Псков</span>
+                      <h3 class="team-item__name">Ольга Урсова</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="team-item">
+                <div class="team-item__wrapper">
+                  <div class="team-item__left">
+                    <div class="team-item__img-wrap"><img class="lazyload team-item__img" src="./assets/img/mock/person-4.jpg" data-src="" alt="Татьяна Суровцева"></div>
+                  </div>
+                  <div class="team-item__right">
+                    <div class="team-item__info"><span class="team-item__city">Петрозаводск</span>
+                      <h3 class="team-item__name">Татьяна Суровцева</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="team-item">
+                <div class="team-item__wrapper">
+                  <div class="team-item__left">
+                    <div class="team-item__img-wrap"><img class="lazyload team-item__img" src="./assets/img/mock/person-5.jpg" data-src="" alt="Татьяна Дубоенко"></div>
+                  </div>
+                  <div class="team-item__right">
+                    <div class="team-item__info"><span class="team-item__city">Пермь</span>
+                      <h3 class="team-item__name">Татьяна Дубоенко</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="team-item">
+                <div class="team-item__wrapper">
+                  <div class="team-item__left">
+                    <div class="team-item__img-wrap"><img class="lazyload team-item__img" src="./assets/img/mock/person-6.jpg" data-src="" alt="Тюгаева Елена"></div>
+                  </div>
+                  <div class="team-item__right">
+                    <div class="team-item__info"><span class="team-item__city">Екатеренбург</span>
+                      <h3 class="team-item__name">Тюгаева Елена</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+<footer class="main-footer" id="nav-contacts">
+  <div class="container">
+    <div class="main-footer__wrap">
+      <div class="logo main-footer__logo"><img class="logo__img" src="./assets/img/assets/logo.png" width="345" alt="Логотип онлайн марафон для родителей"></div>
+      <nav class="nav main-footer__nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link" href="#nav-about" data-gap="140" data-mob="80">О проекте </a></li>
+          <li class="nav__item"><a class="nav__link" href="#nav-form" data-gap="150" data-mob="60"> Принять участие</a></li>
+          <li class="nav__item"><a class="nav__link" href="#nav-contacts" data-gap="140" data-mob="80">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="main-footer__contacts">
+        <div class="tel main-footer__tel"><a href="tel:88332447484">8 (8332) 44 74 84</a></div>
+        <div class="social social--footer">
+          <ul class="social__list">
+            <li class="social__item"><a class="social__link social__link--web" href="http://itpoznanie.ru/" aria-label="Наш сайт" target="_blank"></a></li>
+            <li class="social__item"><a class="social__link social__link--inst" href="https://www.instagram.com/roditeli_online/?igshid=1m2xe3zs1ayr" aria-label="Мы в Инстаграм" target="_blank"></a></li>
+            <li class="social__item"><a class="social__link social__link--vk" href="https://vk.com/poznanieonline" aria-label="Мы в ВК" target="_blank"></a></li>
           </ul>
         </div>
       </div>
     </div>
   </div>
-  <div class="residence__inner">
-    <div class="container">
-      <p>Участники «Летней IT-школы» размещаются в отапливаемых корпусах, в комнатах, адаптированных под 3-5 - местное размещение, до 5 человек в комнате</p>
-      <ul class="residence-feature">
-        <li class="residence-feature__item"><span class="residence-feature__wrap residence-feature__wrap--1">Отряды по 20-25 человек</span></li>
-        <li class="residence-feature__item"><span class="residence-feature__wrap residence-feature__wrap--2">В комнате кровати, индивидуальные тумбочки, стол, стеллаж</span></li>
-        <li class="residence-feature__item"><span class="residence-feature__wrap residence-feature__wrap--3">Комнаты по 3-5 человек, хорошая новая мебель</span></li>
-        <li class="residence-feature__item"><span class="residence-feature__wrap residence-feature__wrap--4">Удобства в корпусах, есть горячая вода, <br> душ</span></li>
-        <li class="residence-feature__item"><span class="residence-feature__wrap residence-feature__wrap--5">Через день дети ходят мыться <br> в банный <br> комплекс</span></li>
-        <li class="residence-feature__item"><span class="residence-feature__wrap residence-feature__wrap--6">Оборудованные аудитории</span></li>
-        <li class="residence-feature__item"><span class="residence-feature__wrap residence-feature__wrap--7">Новая <br> столовая</span></li>
-        <li class="residence-feature__item"><span class="residence-feature__wrap residence-feature__wrap--8">Беседки <br> с освещением</span></li>
-        <li class="residence-feature__item"><span class="residence-feature__wrap residence-feature__wrap--9">Костровые <br> места</span></li>
-        <li class="residence-feature__item"><span class="residence-feature__wrap residence-feature__wrap--10">Летняя сцена <br> и клуб</span></li>
-        <li class="residence-feature__item"><span class="residence-feature__wrap residence-feature__wrap--11">Футбольные и баскетбольные поля</span></li>
-        <li class="residence-feature__item"><span class="residence-feature__wrap residence-feature__wrap--12">Тренажерный зал под открытым небом</span></li>
-      </ul>
-    </div>
-  </div>
-</section>
-<section class="reviews" id="nav-rew">
-  <div class="reviews__container">
-    <div class="container">
-      <h2 class="title">Отзывы участников смены и их родителей</h2>
-      <div class="reviews__wrapper reviews-slider">
-        <article class="review">
-          <div class="review__wrapper">
-            <div class="review__left">
-              <div class="review__img-wrap"><img class="lazyload review__img" src="./assets/img/assets/bird.png" data-src="/assets/img/mock/review1.jpg" alt="Дарья Шишкина"></div>
-              <div class="review__info">    
-                <h3 class="review__author">Дарья Шишкина</h3><span class="review__pos">13 лет</span>
-              </div>
-            </div>
-            <div class="review__right">
-              <blockquote>Да, да, всё верно, 22 день, так как мы все ещё живём лагерной жизнью. Скучаем, тоскует, активно переписываемся в социальных медиа, назначаем встречи... Несмотря на дождик, дождь и дождище все эти дни были самыми насыщенными, самыми счастливыми, самыми позитивными...</blockquote>
-            </div>
-          </div>
-        </article>
-        <article class="review">
-          <div class="review__wrapper">
-            <div class="review__left">
-              <div class="review__img-wrap"><img class="lazyload review__img" src="./assets/img/assets/bird.png" data-src="/assets/img/mock/review2.jpg" alt="Елена Шабалина"></div>
-              <div class="review__info">   
-                <h3 class="review__author">Елена Шабалина</h3><span class="review__pos">Мама</span>
-              </div>
-            </div>
-            <div class="review__right">
-              <blockquote>- Школьные каникулы подходят к концу! Подошла к концу и лагерная смена в детском оздоровительном лагере «Вишкиль». Ребенок счастлив!!! ”Мама, я хочу снова!” - И это самая высокая оценка мастерству вожатых, организаторов и руководителя Смены Вылегжаниной Инне Витальевне.</blockquote>
-            </div>
-          </div>
-        </article>
-        <article class="review">
-          <div class="review__wrapper">
-            <div class="review__left">
-              <div class="review__img-wrap"><img class="lazyload review__img" src="./assets/img/assets/bird.png" data-src="/assets/img/mock/review3.jpg" alt="Александр Луппов"></div>
-              <div class="review__info"> 
-                <h3 class="review__author">Александр Луппов</h3><span class="review__pos">Папа</span>
-              </div>
-            </div>
-            <div class="review__right">
-              <blockquote>Бывали, будем и всем советуем. Первое наше впечатление - родительский день! Не хотелось уезжать домой. Атмосфера сплоченности, дружбы, познания) захватила всех родителей. Второе - сын поменял свои предпочтения и теперь август у него занят на несколько лет вперед. Новые друзья, интересные мероприятия, значительные подвижки в его увлечении робототехникой - все это IT-смена.</blockquote>
-            </div>
-          </div>
-        </article>
-        <article class="review">
-          <div class="review__wrapper">
-            <div class="review__left">
-              <div class="review__img-wrap"><img class="lazyload review__img" src="./assets/img/assets/bird.png" data-src="/assets/img/mock/empty.png" alt="Мария Иванцова"></div>
-              <div class="review__info"> 
-                <h3 class="review__author">Мария Иванцова</h3><span class="review__pos">Участник</span>
-              </div>
-            </div>
-            <div class="review__right">
-              <blockquote>Недавно я приехала из лагеря IT школа в который я приезжаю уже третий год. Один из самых лучших лагерей за всю мою жизнь! И какая-то огромная часть меня не хочет чтобы этот лагерь заканчивался, но что-то нашептывает мне что пора бы повидаться с моими родителями по которым я очень скучала.</blockquote>
-            </div>
-          </div>
-        </article>
-        <article class="review">
-          <div class="review__wrapper">
-            <div class="review__left">
-              <div class="review__img-wrap"><img class="lazyload review__img" src="./assets/img/assets/bird.png" data-src="/assets/img/mock/review4.jpg" alt="Иван Морозов"></div>
-              <div class="review__info"> 
-                <h3 class="review__author">Иван Морозов</h3><span class="review__pos">17 лет</span>
-              </div>
-            </div>
-            <div class="review__right">
-              <blockquote>Спасибо всем за такую смену 🤗. 1 отряд, вы лучшие 😉! Если честно, то мне уже охота вернуться обратно 🙃</blockquote>
-            </div>
-          </div>
-        </article>
-        <article class="review">
-          <div class="review__wrapper">
-            <div class="review__left">
-              <div class="review__img-wrap"><img class="lazyload review__img" src="./assets/img/assets/bird.png" data-src="/assets/img/mock/empty.png" alt="Анонимный пользователь"></div>
-              <div class="review__info"> 
-                <h3 class="review__author">Анонимный пользователь</h3><span class="review__pos">Участник</span>
-              </div>
-            </div>
-            <div class="review__right">
-              <blockquote>Ребята, а лагерь - это отдельное государство, страна или остров 🇷🇺, со своими законами и правилами 📑📋📝, со своим "воздухом" и "запахом" 🌲🌲🌲, со своей особой энергетикой и драйвом 🏆🤸‍♂🌟🎉🎉 </blockquote>
-            </div>
-          </div>
-        </article>
+</footer>
+    <div class="modal" id="modal-success">
+      <div class="modal__wrap">
+        <p class="modal__text">Спасибо, ваше заявка принята.</p>
+        <p class="modal__text">Мы свяжемcя с Вами в ближайшее время</p>
       </div>
     </div>
-  </div>
-</section>
-      <section class="price" id="nav-price">
-        <div class="container">
-          <div class="form price__form">
-            <form>
-              <div class="form__wrap">
-                <div class="input-field">
-                  <input class="project-input" id="child3" type="text" required>
-                  <label class="project-label" for="child3">Имя ребенка</label>
-                </div>
-                <div class="input-field">
-                  <input class="project-input" id="parent3" type="text" required>
-                  <label class="project-label" for="parent3">Имя родителя</label>
-                </div>
-                <div class="input-field">
-                  <input class="project-input" id="tel3" type="tel" required>
-                  <label class="project-label" for="tel3">Телефон</label>
-                </div>
-              </div>
-            </form>
-            <button class="form__button button">Забронировать</button>
-          </div>
-          <h2 class="title">Стоимость участия</h2>
-          <div class="price-table-wrap">
-            <table class="price-table">
-              <thead>
-                <tr>
-                  <th></th>
-                  <th>при оплате до 30 апреля</th>
-                  <th>при оплате после 30 апреля</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Для учащихся из Кирова <br> и области (субсидия из областного бюджета)</td>
-                  <td> <b class="mark">24 520 руб.</b></td>
-                  <td>26 520 руб.</td>
-                </tr>
-                <tr> 
-                  <td>Для иногородних участников</td>
-                  <td> <b class="mark">33 235 руб.</b></td>
-                  <td>35 235 руб.</td>
-                </tr>
-              </tbody>
-            </table>
-          </div><b class="price__text">В стоимость входит:</b>
-          <div class="price__wrap">
-            <ul class="price__list">
-              <li class="price__item">Ежедневные занятия по профилю смены</li>
-              <li class="price__item">Квесты, ролевые игры</li>
-              <li class="price__item">Программа активного отдыха: спортивные игры, соревнования, веревочный курс</li>
-            </ul>
-            <ul class="price__list">
-              <li class="price__item">Проживание, питание и медобслуживание</li>
-              <li class="price__item">Футболка с фирменным логотипом лагеря и сувенирная продукция</li>
-              <li class="price__item">Тренинги и мастер-классы</li>
-            </ul>
-          </div>
-          <p class="price__desk">Стоимость услуг отдыха и оздоровления составляет 19 020 рублей (для иногородних участников 27 735 рублей). Стоимость профильных занятий – 5500 рублей (после 30 апреля 7500 рублей).</p>
-        </div>
-      </section>
-      <section class="persons">
-        <div class="persons__container">
-          <div class="container">
-            <h2 class="title">Педагогическая команда</h2>
-            <p class="persons__text">Наши вожатые и преподаватели – профессионалы и увлеченные педагоги, которые воодушевляют, вдохновляют, обучают и наставляют.</p>
-            <div class="persons__wrap mob-slider">
-              <article class="person">
-                <div class="person__container">
-                  <div class="person__img-wrap"><img class="lazyload person__img" src="./assets/img/assets/bird.png" data-src="/assets/img/mock/person1.jpg" alt="Инна Вылегжанина" width="171"></div>
-                  <div class="person__wrap">
-                    <h3 class="person__title">Инна Вылегжанина</h3><span class="person__position">Начальник и научный руководитель смены</span>
-                  </div>
-                </div>
-              </article>
-              <article class="person">
-                <div class="person__container">
-                  <div class="person__img-wrap"><img class="lazyload person__img" src="./assets/img/assets/bird.png" data-src="/assets/img/mock/person2.jpg" alt="Егор Бельтюгов" width="171"></div>
-                  <div class="person__wrap">
-                    <h3 class="gap person__title">Егор Бельтюгов</h3><span class="person__position">Преподаватель младшей параллели</span>
-                  </div>
-                </div>
-              </article>
-              <article class="person">
-                <div class="person__container">
-                  <div class="person__img-wrap"><img class="lazyload person__img" src="./assets/img/assets/bird.png" data-src="/assets/img/mock/person3.jpg" alt="Вадим Катаев" width="171"></div>
-                  <div class="person__wrap">
-                    <h3 class="gap person__title">Вадим Катаев</h3><span class="person__position">Старший преподаватель средней параллели</span>
-                  </div>
-                </div>
-              </article>
-              <article class="person">
-                <div class="person__container">
-                  <div class="person__img-wrap"><img class="lazyload person__img" src="./assets/img/assets/bird.png" data-src="/assets/img/mock/person4.jpg" alt="Василий Лусников" width="171"></div>
-                  <div class="person__wrap">
-                    <h3 class="person__title">Василий Лусников</h3><span class="person__position">Преподаватель старшей параллели</span>
-                  </div>
-                </div>
-              </article>
-              <article class="person">
-                <div class="person__container">
-                  <div class="person__img-wrap"><img class="lazyload person__img" src="./assets/img/assets/bird.png" data-src="/assets/img/mock/person5.jpg" alt="Евгения Карсаева" width="171"></div>
-                  <div class="person__wrap">
-                    <h3 class="person__title">Евгения Карсаева</h3><span class="person__position">Старший воспитатель</span>
-                  </div>
-                </div>
-              </article>
-              <article class="person">
-                <div class="person__container">
-                  <div class="person__img-wrap"><img class="lazyload person__img" src="./assets/img/assets/bird.png" data-src="/assets/img/mock/person6.jpg" alt="Александра Плосконосова" width="171"></div>
-                  <div class="person__wrap">
-                    <h3 class="person__title">Александра Плосконосова</h3><span class="person__position">Руководитель лидерского направления</span>
-                  </div>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </section>
-<section class="questions">
-  <div class="questions__container">
-    <div class="container">
-      <h2 class="title">Часто задаваемые вопросы</h2>
-      <div class="questions__wrap">
-        <div class="question">
-          <button class="question__button">Как формируются отряды?</button>
-          <div class="question__inner close">
-            <p>Отряды формируются по возрастам.</p>
-          </div>
-        </div>
-        <div class="question">
-          <button class="question__button">Можно ли попасть в отряд с другом разных возрастов? </button>
-          <div class="question__inner close">
-            <p>Можно, если разница в возрасте 1 год. В другом случае, ребенку будет некомфортно жить в отряде с детьми более старшего или младшего возраста. </p>
-          </div>
-        </div>
-        <div class="question">
-          <button class="question__button">Как ребенок выбирает занятия? </button>
-          <div class="question__inner close">
-            <p>Смена в лагере делится на образовательные сеты: 4 учебных дня + 1 выходной. В каждом сете новые занятия, которые посещает ребенок.</p>
-          </div>
-        </div>
-        <div class="question">
-          <button class="question__button">Нужно ли специальное оборудование из дома? </button>
-          <div class="question__inner close">
-            <p>Нет, не нужно. По желанию можно взять с собой свои наборы роботов. </p>
-          </div>
-        </div>
-        <div class="question">
-          <button class="question__button">Интересно ли девочкам?</button>
-          <div class="question__inner close">
-            <p>Девочек в лагере немного, но они окружены вниманием мальчиков, поэтому с удовольствием ездят к нам в лагерь из года в год. Они наравне с мальчиками посещают занятия, могут заниматься журналистикой.</p>
-          </div>
-        </div>
-        <div class="question">
-          <button class="question__button">Можно ли приехать к ребенку в гости? </button>
-          <div class="question__inner close">
-            <p>Один раз в смену у нас проходит День встречи с родителями, к которому мы готовимся, показываем концерт. В остальное время приезжать можно, но стоит учитывать, что свободного времени у детей немного, день занят учебными занятиями, подготовкой к мероприятиям, спортом. </p>
-          </div>
-        </div>
-        <div class="question">
-          <button class="question__button">Как можно будет получать новости по времяпровождению ребенка в лагере? </button>
-          <div class="question__inner close">
-            <p>Мы делимся с родителями фотографиями и видео в Вконтакте и в Instagram.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-      <div class="greeting">
-        <div class="greeting__container">
-          <div class="greeting__wrapper">
-            <p>До встречи в загородном лагере<br>«Летней <span class="blue">IT-школы</span>»</p>
-          </div>
-        </div>
-      </div>
-    </main>
-    <footer class="main-footer" id="nav-contacts">
-      <div class="container">
-        <div class="main-footer__wrap">
-          <div class="social"><span>Мы в соц. сетях</span>
-            <ul class="social__list">
-              <li class="social__item"><a class="social__link social__link--vk" href="https://vk.com/itpoznanie" aria-label="Мы в ВК" target="_blank"></a></li>
-              <li class="social__item"><a class="social__link social__link--inst" href="https://www.instagram.com/poznanie_kirov/?hl=ru" aria-label="Мы в Инстаграм" target="_blank"></a></li>
-            </ul>
-          </div>
-          <nav class="footer-nav">
-            <ul class="footer-nav__list">
-              <li class="footer-nav__item"><a class="footer-nav__link" href="#nav-program" data-gap="140" data-mob="60">Программа</a></li>
-              <li class="footer-nav__item"><a class="footer-nav__link" href="#nav-price" data-gap="-80" data-mob="-230"> Стоимость</a></li>
-              <li class="footer-nav__item"><a class="footer-nav__link" href="#nav-place" data-gap="170" data-mob="60">Место проведения</a></li>
-              <li class="footer-nav__item"><a class="footer-nav__link" href="#nav-rew" data-gap="140" data-mob="50">Отзывы</a></li>
-              <li class="footer-nav__item"><a class="footer-nav__link" href="#nav-contacts" data-gap="140" data-mob="140">Контакты</a></li>
-            </ul>
-          </nav>
-          <div class="tel yellow"><span>Есть вопросы? Звоните</span><a href="tel:88332447484">8 8332 44 74 84</a></div>
-          <div class="modal modal--icon" id="modal-success">
-            <p class="modal__text">Спасибо, ваше заявка принята.</p>
-            <p class="modal__text">Мы свяжемся с вами в ближайшее время</p>
-          </div>
-        </div>
-      </div>
-    </footer>
-  <script type="text/javascript" src="assets/js/vendors.d1fce992ee0fa3430f5e.js"></script><script type="text/javascript" src="assets/js/app.d1fce992ee0fa3430f5e.js"></script></body>
+  <script type="text/javascript" src="assets/js/vendors.749451b0f6a46d477f10.js"></script><script type="text/javascript" src="assets/js/app.749451b0f6a46d477f10.js"></script></body>
 </html>
