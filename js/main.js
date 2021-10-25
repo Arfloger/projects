@@ -56,6 +56,48 @@ var init = function init() {
 init();
 "use strict";
 
+var reviewsSlider = $('.slider-reviews');
+
+if (reviewsSlider.length > 0) {
+  var sliderCounter = $('.reviews__counter');
+  var maxCounter = $('.reviews__item').length;
+  sliderCounter.text("01 / ".concat(maxCounter > 9 ? maxCounter : '0' + maxCounter));
+  reviewsSlider.slick({
+    infinite: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: false,
+    prevArrow: $('.reviews--prev'),
+    nextArrow: $('.reviews--next')
+  });
+  reviewsSlider.on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+    var currentIndex = nextSlide + 1;
+    sliderCounter.text("".concat(currentIndex > 9 ? currentIndex : '0' + currentIndex, " / ").concat(maxCounter > 9 ? maxCounter : '0' + maxCounter));
+  });
+}
+"use strict";
+
+var serviceSlider = $('.slider-service');
+
+if (serviceSlider.length > 0) {
+  var sliderCounter = $('.service__counter');
+  var maxCounter = $('.service__slide').length;
+  sliderCounter.text("01 / ".concat(maxCounter > 9 ? maxCounter : '0' + maxCounter));
+  serviceSlider.slick({
+    infinite: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: false,
+    prevArrow: $('.service--prev'),
+    nextArrow: $('.service--next')
+  });
+  serviceSlider.on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+    var currentIndex = nextSlide + 1;
+    sliderCounter.text("".concat(currentIndex > 9 ? currentIndex : '0' + currentIndex, " / ").concat(maxCounter > 9 ? maxCounter : '0' + maxCounter));
+  });
+}
+"use strict";
+
 function openTabContent(evt) {
   evt.preventDefault();
   var parentTab = $(this).closest('.tab');
